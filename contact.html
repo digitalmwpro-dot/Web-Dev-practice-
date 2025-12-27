@@ -2,57 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Contact Us | Digital MW Pro</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Contact Digital MW Pro for approvals, partnerships, and support.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Search Console -->
+  <meta name="google-site-verification" content="QdJKOCYFVszjdFoSY5baE7XdZfx34wfBaFqBkrBh63s">
+
+  <!-- Google AdSense -->
   <meta name="google-adsense-account" content="ca-pub-3999059253357012">
-  <title>Contact Us - Digital MW</title>
-  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
 <header>
-  <nav class="navbar">
-    <h1 class="logo">Digital MW</h1>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
-    </ul>
-  </nav>
+  <h1>Contact Digital MW Pro</h1>
+  <p>Send a request for approval, support, or collaboration.</p>
 </header>
 
-<main class="contact-page">
-  <section class="contact-container">
-    <h2>Get in Touch</h2>
-    <p>Have questions or need approval support? Send us a message below.</p>
+<main class="container">
 
-    <form action="https://formsubmit.co/digitalmwpro@gmail.com" method="POST">
+  <!-- FORM (Formspree) -->
+  <form action="https://formspree.io/f/mwkgnzql" method="POST" class="contact-form">
 
-      <!-- Required hidden fields -->
-      <input type="hidden" name="_subject" value="New Contact Request - Digital MW">
-      <input type="hidden" name="_next" value="https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPO/success.html">
-      <input type="hidden" name="_captcha" value="false">
+    <label>Full Name</label>
+    <input type="text" name="name" required>
 
-      <label>Full Name</label>
-      <input type="text" name="name" required>
+    <label>Email Address</label>
+    <input type="email" name="email" required>
 
-      <label>Email Address</label>
-      <input type="email" name="email" required>
+    <label>Reason for Contact</label>
+    <select name="reason" required>
+      <option value="">Select</option>
+      <option value="Approval Request">Approval Request</option>
+      <option value="Support">Support</option>
+      <option value="Business">Business / Ads</option>
+    </select>
 
-      <label>Message</label>
-      <textarea name="message" rows="5" required></textarea>
+    <label>Message</label>
+    <textarea name="message" rows="5" required></textarea>
 
-      <button type="submit">Send Message</button>
-    </form>
+    <!-- Redirect after success -->
+    <input type="hidden" name="_redirect" value="success.html">
+
+    <button type="submit">Send Request</button>
+  </form>
+
+  <section class="contact-info">
+    <h3>Direct Emails</h3>
+    <p>📧 digitalmwpro@gmail.com</p>
+    <p>📧 digitalmwpro@outlook.com</p>
   </section>
+
 </main>
 
 <footer>
-  <p>&copy; 2025 Digital MW. All Rights Reserved.</p>
-  <p>
-    Email:
-    <a href="mailto:digitalmwpro@gmail.com">digitalmwpro@gmail.com</a> |
-    <a href="mailto:info@digitalmwpro.com">info@digitalmwpro.com</a>
-  </p>
+  <a href="sitemap.xml">Sitemap</a>
 </footer>
+
 </body>
 </html>
